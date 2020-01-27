@@ -20,6 +20,7 @@
   <ItemGroup>
     <Folder Include="Images\" />
     <Folder Include="Views\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\LogInDroop.svg" />
