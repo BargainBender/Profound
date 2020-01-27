@@ -23,7 +23,10 @@ namespace Profound.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            Xamarin.IQKeyboardManager.SharedManager.Enable = true;
+
             LoadApplication(new App());
 
 
