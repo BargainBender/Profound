@@ -1,7 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Profound.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  mc:Ignorable="d" x:Class="Profound.MainPage"
+             
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             >
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <ffSvg:SvgCachedImage HorizontalOptions="Fill"
+			WidthRequest="500" Aspect="AspectFill"
+			Source = "resource://Profound.Images.LogInDroop.svg">
+            <!-- https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/AJ_Digital_Camera.svg -->
+		</ffSvg:SvgCachedImage>
+        <StackLayout Padding="50, 0, 50, 0" VerticalOptions="CenterAndExpand">
+            <Label Text="Student Number" FontSize="25"/>
+            <Entry Margin="0,0,0,10"/>
+            <Label Text="Password" FontSize="25"/>
+            <Entry Margin="0,0,0,100"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
