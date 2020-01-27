@@ -19,11 +19,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\LogInDroop.svg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\LogInDroop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\MainPage.xaml.cs" />
   </ItemGroup>
 </Project>

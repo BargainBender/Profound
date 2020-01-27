@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Profound.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Profound
 {
@@ -10,7 +9,7 @@ namespace Profound
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LogIn();
         }
 
         protected override void OnStart()
