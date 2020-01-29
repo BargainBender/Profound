@@ -26,9 +26,13 @@
     <None Remove="Images\LogInDroop.svg" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Remove="MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Images\LogInDroop.svg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\MainPage.xaml.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
   </ItemGroup>
 </Project>

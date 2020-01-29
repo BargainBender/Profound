@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" x:Class="Profound.Views.LogIn">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <!-- Place new controls here -->
+            <ffSvg:SvgCachedImage HorizontalOptions="Fill"
+			    WidthRequest="500" Aspect="AspectFill"
+			    Source = "resource://Profound.Images.LogInDroop.svg">
+                <!-- https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/AJ_Digital_Camera.svg -->
+            </ffSvg:SvgCachedImage>
+            <StackLayout Padding="50, 0, 50, 0" VerticalOptions="Center" Margin="0,30">
+                <Label x:Name="lbl_studentNumber" Text="Student Number" FontSize="25" FontFamily="{StaticResource ProductSansRegular}" TextColor="#333333"/>
+                <Entry x:Name="entry_studentNumber" Keyboard="Numeric" Margin="0,0,0,10"/>
+                <Label x:Name="lbl_password" Text="Password" FontSize="25"  FontFamily="{StaticResource ProductSansRegular}" TextColor="#333333"/>
+                <Entry x:Name="entry_password" IsPassword="True"/>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Label Text="Sign In" TextColor="#333333" FontFamily="{StaticResource ProductSansBold}" FontSize="25" VerticalOptions="Center"/>
+                    <Button Text="&#xf061;" TextColor="#F5F5F5" FontSize="25" FontFamily="{StaticResource FontAwesomeSolid}" HeightRequest="60" WidthRequest="60" CornerRadius="30" Margin="10,0,50,0" BackgroundColor="#333333" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

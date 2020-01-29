@@ -11,10 +11,13 @@
             <!-- https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/AJ_Digital_Camera.svg -->
 		</ffSvg:SvgCachedImage>
         <StackLayout Padding="50, 0, 50, 0" VerticalOptions="CenterAndExpand">
-            <Label Text="Student Number" FontSize="25" FontFamily="ProductSans-Bold"/>
-            <Entry Margin="0,0,0,10"/>
-            <Label Text="Password" FontSize="25"  FontFamily="{StaticResource ProductSansRegular}"/>
-            <Entry Margin="0,0,0,100"/>
+            <Label x:Name="lbl_studentNumber" Text="Student Number" FontSize="25" FontFamily="{StaticResource ProductSansRegular}" TextColor="#333333"/>
+            <Entry x:Name="entry_studentNumber" Margin="0,0,0,10"/>
+            <Label x:Name="lbl_password" Text="Password" FontSize="25"  FontFamily="{StaticResource ProductSansRegular}" TextColor="#333333"/>
+            <Entry x:Name="entry_password" Margin="0,0,0,100"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Sign In" FontFamily="{StaticResource ProductSansBold}"/>            
         </StackLayout>
     </StackLayout>
 </ContentPage>
