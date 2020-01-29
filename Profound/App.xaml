@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Profound.App">
     <Application.Resources>
+
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontAwesomeSolid" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="FontAwesome5Free-Solid"/>
+                <On Platform="Android" Value="FontAwesomeSolid.otf#FontAwesomeSolid" /> 
+            </OnPlatform>
+            <OnPlatform x:Key="ProductSansBold" x:TypeArguments="x:String" >
+                <On Platform="iOS" Value="ProductSans-Bold"/>
+                <On Platform="Android" Value="ProductSansBold.ttf#ProductSansBold"/>
+            </OnPlatform>
+            <OnPlatform x:Key="ProductSansRegular" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="ProductSans-Regular"/>
+                <On Platform="Android" Value="ProductSansRegular.ttf#ProductSansRegular"/>
+            </OnPlatform>
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>
